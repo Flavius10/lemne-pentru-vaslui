@@ -11,6 +11,11 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+
+      fontFamily: {
+        BerkshireSwash: ["'Berkshire Swash'", 'cursive'],
+        Garet: ["'Garet'", 'sans-serif'],
+      }
     },
   },
   plugins: [],
