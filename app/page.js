@@ -75,11 +75,11 @@ export default function Home() {
         <p className="text-base text-[#693b23] mb-4">RO59BTRLUSDCRT0668242601</p>
 
         <p className="text-base text-[#693b23] mb-4">
-          Vă rugăm să menționați în transfer "lemne Vaslui" pentru a fi direcționați către această cauză. Vă mulțumim!
+          Vă rugăm să menționați în transfer &quot;lemne Vaslui&quot; pentru a fi direcționați către această cauză. Vă mulțumim!
         </p>
 
         <p className="text-base text-[#693b23]">Pentru donații cash:</p>
-        <p className="text-base text-[#693b23]">0723 999 950 - Dumitru Hrișcă</p></b>
+        <p className="text-base text-[#693b23]">0723 999 950 - Dumitru Hrișca</p></b>
       </div>
     </div>
   );
