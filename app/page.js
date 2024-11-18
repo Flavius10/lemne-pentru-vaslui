@@ -16,7 +16,7 @@ export default function Home() {
       });
   };
 
-  const targetAmount = 15000;
+  const targetAmount = 30000;
   const calculatePercentage = (sum) => {
     return sum ? (sum / targetAmount) * 100 : 0; // Handle undefined/null sum values
   };
@@ -51,7 +51,7 @@ export default function Home() {
         </p>
       <Image src="/camion.png" alt="Lemne pentru Vaslui" width={200} height={200} className="mb-6" />
 
-      <p className="text-xl text-[#693b23] mb-4"> <b>{progressValue} lei</b> strânși din 15.000 lei</p>
+      <p className="text-xl text-[#693b23] mb-4"> <b>{progressValue} lei</b> strânși din 30.000 lei</p>
 
       <progress value={calculatePercentage(progressValue)} max="100" className="w-full max-w-lg h-6 mb-6 bg-gray-200"></progress>
 
@@ -64,6 +64,9 @@ export default function Home() {
       <p className="text-sm text-[#693b23] mb-4">*progress bar-ul este actualizat aprox. o dată la 3 ore</p>
 
       <div className="text-left text-[#693b23] md:mx-[25%]">
+        <p className="text-xl font-BerkshireSwash text-[#693b23] mb-4">
+        Asociatia Speranța Fără Frontiere
+        </p>
         <b>
         <h2 className="text-base text-[#693b23]">Cont RON</h2>
         <p className="text-base text-[#693b23] mb-4">RO08BTRLRONCRT0668242601</p>
