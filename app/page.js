@@ -45,9 +45,9 @@ export default function Home() {
 
   return (
     <div className="flex flex-col justify-center items-center text-center p-4 bg-[#fff7f1] min-h-screen">
-      <h1 className="text-5xl font-BerkshireSwash text-[#216778] mb-6">Lemne pentru Vaslui</h1>
+      <h1 className="text-5xl font-BerkshireSwash text-[#216778] mb-6">Tabără educațională 70 de copii Vaslui</h1>
       <p className="text-3xl font-BerkshireSwash text-[#693b23] mb-4">
-          Termen limită: 3 Decembrie
+          Termen limită: 10 Iulie
         </p>
       <Image src="/camion.png" alt="Lemne pentru Vaslui" width={200} height={200} className="mb-6" />
 
