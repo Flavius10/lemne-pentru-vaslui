@@ -51,7 +51,7 @@ export default function Home() {
         </p>
       <Image src="/summerCamp.png" alt="Voronet Summer Camp" width={200} height={200} className="mb-6" />
 
-      <p className="text-xl text-[#693b23] mb-4"> <b>{progressValue} lei</b> strânși din 30.000 lei</p>
+      <p className="text-xl text-[#693b23] mb-4"> <b>{progressValue} lei</b> strânși din 50.000 lei</p>
 
       <progress value={calculatePercentage(progressValue)} max="100" className="w-full max-w-lg h-6 mb-6 bg-gray-200"></progress>
 
