@@ -49,7 +49,7 @@ export default function Home() {
       <p className="text-3xl font-BerkshireSwash text-[#693b23] mb-4">
           Termen limită: 10 Iulie
         </p>
-      <Image src="/camion.png" alt="Lemne pentru Vaslui" width={200} height={200} className="mb-6" />
+      <Image src="/summerCamp.png" alt="Voronet Summer Camp" width={200} height={200} className="mb-6" />
 
       <p className="text-xl text-[#693b23] mb-4"> <b>{progressValue} lei</b> strânși din 30.000 lei</p>
 
