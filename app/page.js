@@ -61,12 +61,12 @@ export default function Home() {
       >
         Donează acum!
       </button>
-      <p className="text-sm text-[#693b23] mb-4">*progress bar-ul este actualizat aprox. o dată la 3 ore</p>
+      <p className="text-sm text-[#693b23] mb-4">*progress bar-ul este actualizat aprox. o dată la 15 min</p>
 
       <div className="text-left text-[#693b23] md:mx-[25%]">
-        <p className="text-xl font-BerkshireSwash text-[#693b23] mb-4">
+        {/* <p className="text-xl font-BerkshireSwash text-[#693b23] mb-4">
         Asociatia Speranța Fără Frontiere
-        </p>
+        </p> */}
         <b>
         <h2 className="text-base text-[#693b23]">Cont RON</h2>
         <p className="text-base text-[#693b23] mb-4">RO08BTRLRONCRT0668242601</p>
@@ -78,7 +78,7 @@ export default function Home() {
         <p className="text-base text-[#693b23] mb-4">RO59BTRLUSDCRT0668242601</p>
 
         <p className="text-base text-[#693b23] mb-4">
-          Vă rugăm să menționați în transfer &quot;lemne Vaslui&quot; pentru a fi direcționați către această cauză. Vă mulțumim!
+          Vă rugăm să menționați în transfer &quot;Tabără Voroneț&quot; pentru a fi direcționați către această cauză. Vă mulțumim!
         </p>
 
         <p className="text-base text-[#693b23]">Pentru donații cash:</p>
