@@ -31,6 +31,7 @@ const AdminPage = () => {
     if (!isNaN(progress)) {
       setProgress(progress);
       alert(`Progress set to ${progress} lei`);
+      router.refresh();
     } else {
       alert('Please enter a valid number');
     }
