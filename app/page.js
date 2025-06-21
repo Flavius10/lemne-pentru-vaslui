@@ -16,7 +16,7 @@ export default function Home() {
       });
   };
 
-  const targetAmount = 30000;
+  const targetAmount = 50000;
   const calculatePercentage = (sum) => {
     return sum ? (sum / targetAmount) * 100 : 0; // Handle undefined/null sum values
   };
