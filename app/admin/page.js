@@ -26,16 +26,38 @@ const AdminPage = () => {
     setProgressValue(e.target.value); 
   };
 
-  const handleProgressSubmit = () => {
-    const progress = parseInt(progressValue, 10); 
-    if (!isNaN(progress)) {
-      setProgress(progress);
+const handleProgressSubmit = async () => {
+  const progress = parseInt(progressValue, 10);
+  if (isNaN(progress)) {
+    alert('Please enter a valid number');
+    return;
+  }
+
+  // Trimit POST la API-ul nostru
+  try {
+    const response = await fetch('/api/set-progress', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        progress,
+        password,
+      }),
+    });
+
+    if (response.ok) {
       alert(`Progress set to ${progress} lei`);
-      router.refresh();
+    } else if (response.status === 401) {
+      alert('Incorrect password');
     } else {
-      alert('Please enter a valid number');
+      alert('Failed to update progress');
     }
-  };
+  } catch (error) {
+    alert('Network error');
+  }
+};
+
 
   return (
     <div>

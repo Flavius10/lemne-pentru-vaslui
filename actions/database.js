@@ -1,7 +1,6 @@
 "use server";
 require('dotenv').config(); 
 const { MongoClient } = require('mongodb');
-const { revalidatePath } = require('next/cache');
 
 const uri = process.env.MONGODB_URI;
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
@@ -40,8 +39,6 @@ export async function setProgress(newProgress) {
         { $set: { progressPercentage: newProgress } },
         { upsert: true } 
       );
-
-      revalidatePath('/');
   
       // Convert result to a plain object
       const plainResult = {
